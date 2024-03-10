@@ -15,19 +15,24 @@
             <p>Invalid city name</p>
         </div>
         <div class="weather">
-            <img src="images/clear.png" class="weather-icon"/>
-            <h1 class="temp">20°C</h1>
-            <h2 class="city">New York</h2>
+            <img src="images/clear.png" class="weather-icon" />
+            <h1 class="city">New York</h1>
+            <h2 class="temp">20°C</h2>
+            <h3 class="condition">Sunny</h3>
             <div class="details">
                 <div class="col">
-                    <img src="images/wind.png" />
+                    <div>
+                        <p class="feelsLike">20°C</p>
+                        <p>Feels Like</p>
+                    </div>
+                </div>
+                <div class="col">
                     <div>
                         <p class="wind">11km/h</p>
                         <p>Wind Speed</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="images/humidity.png" />
                     <div>
                         <p class="humidity">60%</p>
                         <p>Humidity</p>
@@ -57,29 +62,37 @@
 
             document.querySelector(".city").innerHTML = data.name;
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+            document.querySelector(".feelsLike").innerHTML = Math.round(data.main.feels_like) + "°C";
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".wind").innerHTML = data.wind.speed + "Km/h";
 
             if (data.weather[0].main == "Clouds") {
                 weatherIcon.src = "images/clouds.png";
+                document.querySelector(".condition").innerHTML = "Cloudy";
             }
             else if (data.weather[0].main == "Rain") {
                 weatherIcon.src = "images/rain.png";
+                document.querySelector(".condition").innerHTML = "Rainy";
             }
             else if (data.weather[0].main == "Clear") {
                 weatherIcon.src = "images/clear.png";
+                document.querySelector(".condition").innerHTML = "Sunny";
             }
             else if (data.weather[0].main == "Drizzle") {
                 weatherIcon.src = "images/drizzle.png";
+                document.querySelector(".condition").innerHTML = "Drizzly";
             }
             else if (data.weather[0].main == "Snow") {
                 weatherIcon.src = "images/snow.png";
+                document.querySelector(".condition").innerHTML = "Snowy";
             }
             else if (data.weather[0].object.main == "Mist") {
                 weatherIcon.src = "images/mist.png";
+                document.querySelector(".condition").innerHTML = "Misty";
             }
 
             document.querySelector(".weather").style.display = "block";
+            document.querySelector(".error").style.display = "none";
         }
 
     }
