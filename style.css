@@ -97,8 +97,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: -10px 20px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     margin-top: 400px;
     background-color: rgb(128, 128, 128, 0.3);
     height: 90px;
@@ -111,30 +110,22 @@ body {
     padding: 30px;
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: space-around;
 }
 
-.humidity, .wind {
+.humidity, .wind, .feelsLike {
     font-size: 28px;
     margin-top: -6px;
     text-align: center;
-    display: flex;
+    display: inline;
     align-items: center;
-}
-.feelsLike {
-    font-size: 28px;
-    margin-top: -6px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    position: relative;
 }
 .C2 {
-    width: 35px;
+    width: 38px;
     float: left;
-    margin-top: -30px;
+    margin-top: 4px;
     position: absolute;
+    margin-left: 5px;
 }
 .weather {
     display: none;
