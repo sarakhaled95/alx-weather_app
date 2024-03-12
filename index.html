@@ -26,7 +26,8 @@
             <div class="details">
                 <div class="col">
                     <div>
-                        <p class="feelsLike">20°C</p>
+                        <p class="feelsLike">20</p>
+                        <img src="images/C2.png" alt="°C" class="C2" />
                         <p>Feels Like</p>
                     </div>
                 </div>
@@ -66,7 +67,7 @@
 
             document.querySelector(".city").innerHTML = data.name;
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp);
-            document.querySelector(".feelsLike").innerHTML = Math.round(data.main.feels_like) + "°C";
+            document.querySelector(".feelsLike").innerHTML = Math.round(data.main.feels_like);
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".wind").innerHTML = data.wind.speed + "Km/h";
 

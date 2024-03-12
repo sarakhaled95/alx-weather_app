@@ -115,12 +115,26 @@ body {
     justify-content: space-around;
 }
 
-.humidity, .wind, .feelsLike {
+.humidity, .wind {
     font-size: 28px;
     margin-top: -6px;
     text-align: center;
     display: flex;
     align-items: center;
+}
+.feelsLike {
+    font-size: 28px;
+    margin-top: -6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.C2 {
+    width: 35px;
+    float: left;
+    margin-top: -30px;
+    position: absolute;
 }
 .weather {
     display: none;
