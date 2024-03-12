@@ -18,7 +18,10 @@
         <div class="weather">
             <img src="images/clear.png" alt="weather condition icon" class="weather-icon" />
             <h1 class="city">New York</h1>
-            <h2 class="temp">20°C</h2>
+            <div class="tempdeg">
+                <h2 class="temp">20</h2>
+                <img src="images/C.PNG" alt="°C" class="C-deg" />
+            </div>
             <h3 class="condition">Sunny</h3>
             <div class="details">
                 <div class="col">
@@ -62,7 +65,7 @@
             console.log(data);
 
             document.querySelector(".city").innerHTML = data.name;
-            document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+            document.querySelector(".temp").innerHTML = Math.round(data.main.temp);
             document.querySelector(".feelsLike").innerHTML = Math.round(data.main.feels_like) + "°C";
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".wind").innerHTML = data.wind.speed + "Km/h";
