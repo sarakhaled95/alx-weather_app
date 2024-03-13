@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("images/sunset.jpg");
+    background-size: cover;
+}
+header {
+    background-color: #CCCCCC;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #808080;
+    display: flex;
+    align-items: center;
+}
+.logo-text {
+    display: inline-block;
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    font-family: fantasy;
+    color: white;
+    font-size: 20px;
+}
+header img {
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+header p {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    color: #36454F;
+}
+header h1 {
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    color: #36454F;
+    font-size: 16px;
+    font-weight: 200;
+    border-bottom: 1px solid #36454F;
+}
