@@ -38,12 +38,19 @@ header p {
     left: 90px;
     color: #36454F;
 }
-header h1 {
+#about {
     position: absolute;
     top: 30px;
     right: 90px;
     color: #36454F;
     font-size: 16px;
     font-weight: 200;
-    border-bottom: 1px solid #36454F;
+}
+header h2 {
+    position: absolute;
+    top: 30px;
+    right: 300px;
+    color: #36454F;
+    font-size: 16px;
+    font-weight: 200;
 }

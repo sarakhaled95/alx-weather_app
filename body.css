@@ -1,0 +1,55 @@
+.title p1{
+    font-size: 40px;
+    font-weight: 700;
+    display:flex;
+    color: whitesmoke;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.title p {
+    position: relative;
+    color: whitesmoke;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+.title p3 {
+    position: relative;
+    color: whitesmoke;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: -10px;
+}
+.title button {
+    position: relative;
+    color: #36454F;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.about-text {
+    margin-left: 50px;
+    margin-right: 500px;
+    font-size: 18px;
+    display: none;
+}
+.about-text ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    padding: 10px;
+}
+.about-text ul li {
+    margin: 7px;
+}

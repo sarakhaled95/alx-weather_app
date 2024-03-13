@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="body.css" />
     <link rel="tab icon" href="images/icon.png" type="image/png" />
 </head>
 <body>
@@ -11,7 +12,72 @@
         <div class="logo-text">CLIMATE</div>
         <p>CONNECT</p>
         <img src="images/icon.png" alt="logo" />
-        <h1 class="about">About</h1>
+        <a href="#" id="about">About</a>
+        <h2>Home Page</h2>
     </header>
+    <div class="title">
+        <p1>Never be surprised by the weather again,</p1>
+        <p>Check the weather before you go.</p>
+        <p3>You can easily check the weather by the state name</p3>
+        <br />
+        <button>Climate Connect</button>
+    </div>
+    <div class="about-text">
+        <p>
+            Welcome to Climate Connet: Your Friendly Weather Guide!
+        </p>
+        <br />
+        <p>
+            Ever stepped outside only to be surprised by a downpour? 
+            Or maybe you forgot your jacket because the forecast seemed mild, 
+            only to be greeted by a chilly breeze. We've all been there! 
+            That's why we created Climate Connect, a beginner-friendly
+            weather app designed to keep you informed and prepared for whatever 
+            Mother Nature throws your way.
+        </p>
+        <br />
+        <p>
+            Climate Connect is built with simplicity in mind. We understand that 
+            not everyone needs in-depth meteorological data. Our app provides clear, 
+            concise weather information at a glance, making it easy to plan your day. 
+            Whether you're checking for rain before heading to work or planning an 
+            outdoor activity, Climate Connect has you covered.
+        </p>
+        <br />
+        <p>
+            Here is why Climate Connect is the App you need:
+        </p>
+        <ul>
+            <li>
+                Easy-to-understand interface:
+                No confusing jargon or complex layouts.
+            </li>
+            <li>
+                Up-to-date weather information:
+                Get the latest forecast for your location.
+            </li>
+            <li>
+                Clear visuals:
+                Icons and graphics make it easy to understand current weather conditions.
+            </li>
+        </ul>
+        <br />
+        <p>
+            Climate Connect is a great way to take charge of your daily routine
+            and stay prepared for any weather scenario. 
+            So ditch the weather surprises and join the Climate Connect community!
+        </p>
+    </div>
+<script>
+    const about = document.getElementById("about");
+    const aboutText = document.querySelector(".about-text");
+
+    console.log(aboutText);
+
+    about.addEventListener('click', () => {
+        aboutText.style.display = "block";
+        document.querySelector(".title").style.display = "none";
+    })
+</script>
 </body>
 </html>
