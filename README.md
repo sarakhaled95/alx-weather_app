@@ -1,9 +1,6 @@
 Portfolio Project
 	WEATHER APP
 
-Landing page
-	the landing page is simple it has a search box to search the city name you need its weather condition
-
 After searching the data appears
 - temperature
 - city name

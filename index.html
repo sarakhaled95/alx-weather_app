@@ -13,14 +13,14 @@
         <p>CONNECT</p>
         <img src="images/icon.png" alt="logo" />
         <a href="#" id="about">About</a>
-        <h2>Home Page</h2>
+        <a herf="/" id="home">Home Page</a>
     </header>
     <div class="title">
         <p1>Never be surprised by the weather again,</p1>
         <p>Check the weather before you go.</p>
         <p3>You can easily check the weather by the state name</p3>
         <br />
-        <button>Climate Connect</button>
+        <button onclick="window.location.href='weather.html'">Climate Connect</button>
     </div>
     <div class="about-text">
         <p>
@@ -67,16 +67,26 @@
             and stay prepared for any weather scenario. 
             So ditch the weather surprises and join the Climate Connect community!
         </p>
+        <a href="https://github.com/sarakhaled95">GITHUB</a>
+        <a id="a2" href="https://twitter.com/Sarakhaled95se">TWITTER</a>
+        <a id="a3" href="https://www.linkedin.com/in/sara-khaled95/">LinkedIn</a>
+        <a id="a4" href="https://github.com/sarakhaled95/alx-weather_app">Github Repo</a>
     </div>
 <script>
     const about = document.getElementById("about");
     const aboutText = document.querySelector(".about-text");
+    const home = document.getElementById("home");
 
     console.log(aboutText);
 
     about.addEventListener('click', () => {
         aboutText.style.display = "block";
         document.querySelector(".title").style.display = "none";
+    })
+
+    home.addEventListener('click', () => {
+        aboutText.style.display = "none";
+        document.querySelector(".title").style.display = "block";
     })
 </script>
 </body>

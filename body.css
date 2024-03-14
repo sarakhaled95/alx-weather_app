@@ -13,7 +13,7 @@
     margin-bottom: 5px;
     font-size: 40px;
     font-weight: 300;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 .title p3 {
     position: relative;
@@ -22,7 +22,7 @@
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: 100;
-    margin-top: -10px;
+    margin-top: 5px;
 }
 .title button {
     position: relative;
@@ -44,6 +44,8 @@
     margin-right: 500px;
     font-size: 18px;
     display: none;
+    margin-top: 30px;
+    color: black;
 }
 .about-text ul {
     list-style-position: inside;
@@ -52,4 +54,31 @@
 }
 .about-text ul li {
     margin: 7px;
+}
+.about-text a {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 30px;
+}
+#a2 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+#a3 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+#a4 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 200px;
 }
